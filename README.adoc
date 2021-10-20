@@ -1,0 +1,56 @@
+= Sample API Client
+
+The Sample API Client provides easy and convenient access to the Sample API for the Connector SDK documentation.
+
+:toc:
+
+== Getting Started
+
+=== Installation
+
+The accessible through *_datalbry-maven-registry_* and can be added as a dependency using the following snippet in your *_build.gradle.kts_*.
+
+.build.gradle.kts
+[source,kotlin,subs=attributes+]
+----
+implementation("io.datalbry.sample.api:client:0.0.1")
+----
+
+=== Usage
+
+The client is build as a read-only client working with permutations.
+To be used it can be instantiated by using the following snippet:
+
+==== Instantiate Configuration
+
+.Instantiate Configuration
+[source,kotlin,subs=attributes+]
+----
+fun example() {
+    val config = SampleApiClientConfig (
+        uri = URI.create("https://127.0.0.1:8000")
+    )
+}
+----
+
+==== Instantiate Client
+
+.Instantiate Client
+[source,kotlin,subs=attributes+]
+----
+fun example() {
+    // see Instantiate Configuration
+    val client = SampleApiClientFactory().create(config)
+}
+----
+
+==== Further Usage
+
+See the test at:
+
+----
+io.datalbry.sample.api.client.feign.SampleApiClientTest
+----
+
+It contains the instantiation and the usage.
+If debug through the test you can also see at every step the returned values.
