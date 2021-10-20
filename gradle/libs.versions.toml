@@ -1,0 +1,23 @@
+[versions]
+feign = "11.0"
+jackson = "2.9.8"
+junit-core = "5.7.1"
+junit-platform-launcher = "1.7.1"
+
+[libraries]
+feign-slf4j = { module = "io.github.openfeign:feign-slf4j", version.ref = "feign" }
+feign-jackson = { module = "io.github.openfeign:feign-jackson", version.ref = "feign" }
+feign-httpclient= { module = "io.github.openfeign:feign-httpclient", version.ref = "feign" }
+
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8", version.ref = "jackson" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+
+junit-platform = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform-launcher" }
+junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-core" }
+junit-vintage = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit-core" }
+
+[bundles]
+feign = [ "feign-slf4j", "feign-jackson", "feign-httpclient"]
+jackson = ["jackson-module-kotlin", "jackson-datatype-jdk8", "jackson-datatype-jsr310" ]
+junit = ["junit-platform", "junit-engine", "junit-vintage"]
