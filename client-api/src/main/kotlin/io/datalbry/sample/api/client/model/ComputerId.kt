@@ -1,6 +1,6 @@
 package io.datalbry.sample.api.client.model
 
-data class ObjectBId(
+data class ComputerId(
     val id: String,
-    val aId: String,
+    val personId: String,
 )

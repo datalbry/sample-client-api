@@ -1,7 +1,7 @@
 package io.datalbry.sample.api.client.model
 
-data class ObjectY(
+data class OfficePet(
     val id: String,
-    val xId: String,
-    val value: String,
+    val name: String,
+    val type: String,
 )

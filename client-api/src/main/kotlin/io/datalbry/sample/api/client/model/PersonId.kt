@@ -1,6 +1,7 @@
 package io.datalbry.sample.api.client.model
 
-data class ObjectYId(
+data class PersonId(
     val id: String,
-    val xId: String,
 )
+
+

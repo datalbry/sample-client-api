@@ -1,7 +1,8 @@
 package io.datalbry.sample.api.client.model
 
-data class ObjectB(
+data class Person(
     val id: String,
-    val aId: String,
-    val value: String,
+    val name: String,
 )
+
+

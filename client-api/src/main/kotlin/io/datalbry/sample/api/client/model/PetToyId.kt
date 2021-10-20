@@ -1,6 +1,6 @@
 package io.datalbry.sample.api.client.model
 
-data class ObjectX(
+data class PetToyId(
     val id: String,
-    val value: String
+    val petId: String,
 )

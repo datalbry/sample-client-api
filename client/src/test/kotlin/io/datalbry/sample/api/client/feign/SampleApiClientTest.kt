@@ -13,20 +13,20 @@ class SampleApiClientTest {
 
     @Test
     fun verifyModel_worksJustFine() {
-        val objectAIds = client.getObjectAIds().asSequence().toList()
-        val objectAs = objectAIds.map { client.getObjectA(it) }
+        val objectAIds = client.getPersonIds().asSequence().toList()
+        val objectAs = objectAIds.map { client.getPerson(it) }
         assertTrue(objectAIds.isNotEmpty())
-        val objectBIds = objectAIds.flatMap { client.getObjectBIds(it).asSequence().toList() }
+        val objectBIds = objectAIds.flatMap { client.getComputerIds(it).asSequence().toList() }
         assertTrue(objectBIds.isNotEmpty())
-        val objectBs = objectBIds.map { client.getObjectB(it) }
-        val objectCs = objectAIds.flatMap { client.getObjectCs(it).asSequence().toList() }
+        val objectBs = objectBIds.map { client.getComputer(it) }
+        val objectCs = objectAIds.flatMap { client.getProjects(it).asSequence().toList() }
         assertTrue(objectCs.isNotEmpty())
 
-        val objectXs = client.getObjectXs().asSequence().toList()
+        val objectXs = client.getOfficePets().asSequence().toList()
         assertTrue(objectXs.isNotEmpty())
-        val objectYIds = objectXs.flatMap { client.getObjectYIds(it.id).asSequence().toList() }
+        val objectYIds = objectXs.flatMap { client.getPetToysForOfficePet(it.id).asSequence().toList() }
         assertTrue(objectYIds.isNotEmpty())
-        val objectYs = objectYIds.map { client.getObjectY(it) }
+        val objectYs = objectYIds.map { client.getPetToy(it) }
         assertTrue(objectYs.isNotEmpty())
     }
 }
