@@ -49,7 +49,7 @@ fun example() {
 See the test at:
 
 ----
-io.datalbry.sample.api.client.feign.SampleApiClientTest
+client/src/test/kotlin/io/datalbry/sample/api/client/feign/SampleApiClientTest.kt
 ----
 
 It contains the instantiation and the usage.
