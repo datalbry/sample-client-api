@@ -1,4 +1,4 @@
-package io.datalbry.sample.api.client.feign.baseEndpoint
+package io.datalbry.sample.api.client.feign.officePetEndpoint
 
 import feign.Param
 import feign.RequestLine

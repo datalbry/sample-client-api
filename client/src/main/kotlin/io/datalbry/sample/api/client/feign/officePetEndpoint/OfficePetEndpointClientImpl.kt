@@ -1,7 +1,6 @@
-package io.datalbry.sample.api.client.feign.personEndpoint
+package io.datalbry.sample.api.client.feign.officePetEndpoint
 
 import io.datalbry.sample.api.client.OfficePetEndpointClient
-import io.datalbry.sample.api.client.feign.baseEndpoint.OfficePetEndpointFeignResource
 import io.datalbry.sample.api.client.model.OfficePet
 import io.datalbry.sample.api.client.model.PetToy
 import io.datalbry.sample.api.client.model.PetToyId

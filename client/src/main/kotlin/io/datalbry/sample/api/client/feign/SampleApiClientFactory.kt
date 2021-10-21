@@ -3,7 +3,7 @@ package io.datalbry.sample.api.client.feign
 import io.datalbry.sample.api.client.feign.personEndpoint.PersonEndpointClientImpl
 import io.datalbry.sample.api.client.feign.extensions.build
 import io.datalbry.sample.api.client.feign.extensions.defaultBuilder
-import io.datalbry.sample.api.client.feign.personEndpoint.OfficePetEndpointClientImpl
+import io.datalbry.sample.api.client.feign.officePetEndpoint.OfficePetEndpointClientImpl
 
 
 /**

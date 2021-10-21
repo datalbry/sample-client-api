@@ -1,7 +1,6 @@
 package io.datalbry.sample.api.client.feign.personEndpoint
 
 import io.datalbry.sample.api.client.PersonEndpointClient
-import io.datalbry.sample.api.client.feign.baseEndpoint.PersonEndpointFeignResource
 import io.datalbry.sample.api.client.model.*
 
 class PersonEndpointClientImpl(private val feignResource: PersonEndpointFeignResource) : PersonEndpointClient {
