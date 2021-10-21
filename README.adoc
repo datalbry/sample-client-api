@@ -13,7 +13,7 @@ The accessible through *_datalbry-maven-registry_* and can be added as a depende
 .build.gradle.kts
 [source,kotlin,subs=attributes+]
 ----
-implementation("io.datalbry.sample.api:client:0.0.1")
+implementation("io.datalbry.sample.api:1.0-SNAPSHOT")
 ----
 
 === Usage
